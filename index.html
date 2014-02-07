@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZipClips</title>
+    <link href='zipclips.css' rel='stylesheet'\>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="zipclips.js"></script>
+  </head>
+
+  <body>
+    <div class='container'>
+      <h2>ZipClips</h2>
+      <div id='clips'>
+        <h3>Event: Hack Reactor<span id='event-name'></h3>
+        <h3>Clips: 3<span id='num-clips'></h3>
+      </div>
+      <div id='videos'>
+        <div>
+          <video controls="controls" class='mainvideo' name="Hack Reactor 1" src="./videos/video1.mov"></video>
+        </div>
+        <div>
+          <video controls="autoplay" class='videoclip' name="Hack Reactor 2" src="./videos/video2.mov"></video>
+        </div>
+        <div>
+          <video controls="autoplay" class='videothumb' name="Hack Reactor 3" src="./videos/video3.mov"></video>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
