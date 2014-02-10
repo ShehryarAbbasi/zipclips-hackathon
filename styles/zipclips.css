@@ -1,15 +1,26 @@
+header {
+  background-color: 
+}
+
 body {
-  background-color: black;
+  background-color: #23282d;
 }
 
-.mainvideo {
-
+h2, h3 {
+  color: #ffffff;
+  font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
 }
 
-.videoclip {
-
+video {
+  padding: 15px;
+  margin: 0px;
+  border: 5:px solid black;
+  border-radius: 10px 10px 5px gray;
+  filter: grayscale(100%);
+  box-sizing: border-box;
 }
 
-.videothumb {
-
+.title, .subtitle{
+  text-align: center;
+  margin: auto;
 }

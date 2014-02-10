@@ -1,36 +1,35 @@
-<!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
     <title>ZipClips</title>
-    <link href='styles/zipclips.css' rel='stylesheet'\>
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="styles/zipclips.css" rel="stylesheet"\>
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <script src="js/zipclips.js"></script>
+    <script src="data/data.js"></script>
   </head>
 
   <body>
-    <div class='container'>
-      <h2>ZipClips</h2>
-      <div id='clips'>
-        <h3>Event: Hack Reactor<span id='event-name'></h3>
-        <h3>Clips: 3<span id='num-clips'></h3>
+    <header>
+      <h2 class="title">ZipClips</h2>
+    </header>
+    <div class="container">
+      <div id="project">
+        <h3 class="subtitle">Event: Hack Reactor<span id="event-name"></h3>
       </div>
-      <div id='videos'>
-        <div class='mainvideo'>
-          <video controls="controls" width="400" height="300" name="Hack Reactor 1" src="./videos/video1.mov">
-          </video>
-        </div>
-        <div class='videoclip'>
-          <video controls="autoplay" width="200" height="150" name="Hack Reactor 2" src="./videos/video2.mov">
-          </video>
-        </div>
-        <div class='videothumb'>
-          <video width="100" height="75" name="Hack Reactor 3" src="./videos/video3.mov">
-          </video>
-        </div>
-      </div>
-    </div>
+      <div id="videos">
+        <video class = "mainvideo" controls="controls" width="400" height="300" name="Hack Reactor 1" src="./videos/video1.mov">
+        </video>
+        <video controls="autoplay" width="200" height="150" name="Hack Reactor 2" src="./videos/video2.mov">
+        </video>
+        <video width="100" height="75" name="Hack Reactor 3" src="./videos/video3.mov">
+        </video>
+      </div> <!--videos -->
+    </div> <!-- container -->
 
   </body>
 </html>
