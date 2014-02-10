@@ -9,6 +9,3 @@ for (var i = 0; i < clipData.length; i++) {
 $(".mainvideo").dblclick(function() {
   alert("This video was double clicked");
 });
-
-
-
