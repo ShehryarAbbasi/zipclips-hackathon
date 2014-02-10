@@ -1,30 +1,8 @@
-// <script>
-//   var v = new Array();
+// Create video elements for each entry in clipData
 
-//   v[0] = [
-//           "videos/video1.mov"
-//           ];
-//   v[1] = [
-//           "videos/video2.mp4video.mp4"
-//           ];
-//   v[2] = [
-//           // "videos/video3.webm",
-//           // "videos/video3.ogv",
-//           // "videos/video3.mp4",
-//           "videos/video3.mov"
-//           ];
-
-//   function changeVid(n){
-//     var video = document.getElementById('video');
-
-//     if(Modernizr.video && Modernizr.video.webm) {
-//       video.setAttribute("src", v[n][0]);
-//     } else if(Modernizr.video && Modernizr.video.ogg) {
-//       video.setAttribute("src", v[n][1]);
-//     } else if(Modernizr.video && Modernizr.video.h264) {
-//       video.setAttribute("src", v[n][2]);
-//     } else if(Modernizr.video && Modernizr.video.mov)
-
-//     video.load();
-//   }
-// </script>
+for (var i = 0; i < clipData.length; i++) {
+  clipTag = '<video class = "mainvideo" controls="controls" width="400" height="300" name="' + clipData[i].title +
+            '" src="' + clipData[i].url +'"></video>';
+  $("#videos").append(clipTag);
+  console.log(clipTag);
+}
