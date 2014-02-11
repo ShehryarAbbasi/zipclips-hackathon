@@ -27,7 +27,6 @@ video {
 .userimg {
   display: inline;
   float: right;
-
 }
 
 .username {
@@ -40,6 +39,10 @@ video {
 #eventname {
   color: #ffffff;
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+}
+
+#clips {
+  display: inline;
 }
 
 #clipcount {
