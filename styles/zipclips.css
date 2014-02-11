@@ -12,7 +12,7 @@ h2, h3 {
 }
 
 video {
-  padding: 15px;
+  padding: 5px;
   margin: 0px;
   border: 5:px solid black;
   border-radius: 10px 10px 5px gray;
@@ -20,7 +20,17 @@ video {
   box-sizing: border-box;
 }
 
-.title, .subtitle{
+.title {
   text-align: center;
   margin: auto;
+}
+
+.userimg {
+  display: inline-block;
+}
+
+.username {
+  color: #ffffff;
+  font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+  text-align: right;
 }
