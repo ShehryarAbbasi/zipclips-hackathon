@@ -30,19 +30,26 @@ var getLocation = function() {
   }
 };
 
+// Hardcoded position for Hack Reactor
+var position = {
+  coords : {
+    latitude : 37.7836953,
+    longitude : -122.4091845
+  }
+}
+
 var showPosition = function(position) {
   console.log("Running showPosition");
   var latlon = position.coords.latitude + "," + position.coords.longitude;
 
   var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
     + latlon + "&zoom=14&size=400x300&sensor=false";
-    $("mapholder").innerHTML = "<img src='" + img_url + "'>";
-
-  console.log(img_url);
+  var imgTag = "<img src='" + img_url + "'>";
+  $("#mapholder").append(imgTag);
 };
 
 var showError = function() {
   console.log('Geolocation.getCurrentPosition failed.')
 };
 
-getLocation();
+showPosition(position);
