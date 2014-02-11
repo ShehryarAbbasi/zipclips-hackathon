@@ -5,13 +5,15 @@
 
 video {
   padding: 5px;
-  margin: 0px;
-  border: 5:px solid black;
-  border-radius: 5px 5px 5px gray;
-  box-sizing: border-box;
+  margin: 5px;
+  background-color: #ffffff;
+  border: 3px solid black;
+  border-radius: 9px;
+  box-shadow: 3px 3px 3px gray;
 }
 
 .title {
+  font-size: 48;
   text-align: center;
   margin: auto;
 }
@@ -33,12 +35,12 @@ video {
   float: right;
 }
 
-.eventname {
+#eventname {
   color: #ffffff;
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
 }
 
-.clipcount {
+#clipcount {
   color: #ffffff;
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif; 
 }

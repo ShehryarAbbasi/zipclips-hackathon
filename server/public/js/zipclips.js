@@ -10,6 +10,8 @@ for (var i = 0; i < clipData.length; i++) {
   $("#videos").append(clipTag);
 }
 
+$("#clipcount").innerHTML = clipData.length.str;
+
 $(".videoclip").dblclick(function() {
   alert("This video was double clicked");
   // videos = $(".videoclip");
