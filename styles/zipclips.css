@@ -23,10 +23,12 @@ video {
 
 .userimg {
   display: inline;
-  
+  float: right;
+
 }
 
 .username {
   color: #ffffff;
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+  float: right;
 }

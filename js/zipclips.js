@@ -5,7 +5,7 @@ var clipHeight = 225;
 
 // Load test data from array and display
 for (var i = 0; i < clipData.length; i++) {
-  clipTag = '<video class = "videoclip" controls="controls" width="300" height="225" name="' + clipData[i].title +
+  clipTag = '<video class = "videoclip" controls="controls" width="272" height="153" name="' + clipData[i].title +
             '" src="' + clipData[i].url +'"></video>';
   $("#videos").append(clipTag);
 }
@@ -42,9 +42,7 @@ var position = {
 }
 
 var showPosition = function(position) {
-  console.log("Running showPosition");
   var latlon = position.coords.latitude + "," + position.coords.longitude;
-
   var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
     + latlon + "&zoom=14&size=300x225&markers=color:red|" + latlon + "&sensor=false";
   var imgTag = "<img src='" + img_url + "'>";
