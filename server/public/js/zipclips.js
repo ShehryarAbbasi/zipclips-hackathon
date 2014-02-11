@@ -4,11 +4,11 @@ var clipWidth = 300;
 var clipHeight = 225;
 
 // Load test data from array and display
-for (var i = 0; i < clipData.length; i++) {
-  clipTag = '<video class = "videoclip" controls="controls" width="272" height="153" name="' + clipData[i].title +
-            '" src="' + clipData[i].url +'"></video>';
-  $("#videos").append(clipTag);
-}
+// for (var i = 0; i < clipData.length; i++) {
+//   clipTag = '<video class = "videoclip" controls="controls" width="272" height="153" name="' + clipData[i].title +
+//             '" src="' + clipData[i].url +'"></video>';
+//   $("#videos").append(clipTag);
+// }
 
 $("#clipcount").innerHTML = clipData.length.str;
 

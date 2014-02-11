@@ -17,6 +17,7 @@
     <script src="bower_components/d3/d3.min.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/controllers/clips.js"></script>
   </head>
 
   <body>
@@ -29,22 +30,27 @@
         <img class="userimg" src="data/user_icon.png">
         <h4 class="event">Event: </h4>
         <span id="eventname"> Hack Reactor </span>
-        <h4 class="event">Total Clips: </h4>
-        <span id="clipcount"></span>
+<!--         <h4 class="event">Total Clips: </h4>
+        <span id="clipcount"></span> -->
         <div id="mapholder">
           <!-- map location of event gets inserted here -->
         </div>
       </div>
 
 <!--       <div id="videos">
-        video elements get inserted here
+        video elements get inserted here 
       </div>  -->
 
-      </div id="videos" ng-repeat="clip in clips">
-        <video class="videoclip" controls="controls" width="272" height="153" name= {{ clip.title }} 
-           src= {{ clip.url }} ></video>';
+      </div id="videos" ngController="ClipsCtrl">
+        <div id="clips" ng-repeat="clip in clips">
+          <video class="videoclip" controls="controls" width="272" height="153" name= {{ clip.title }} 
+            src= {{ clip.url }} ></video>;
+        </div>
+        <ul>
+          <li ng-repeat="clip in clips">{{clip.title}}</li>
+        </ul>
       </div>
-      
+
     </div> 
 
     <script src="data/data.js"></script>
