@@ -48,7 +48,7 @@ video {
   display: inline;
 }
 
-#clipcount {
+#clipcount, .cliptitles {
   color: #ffffff;
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif; 
 }

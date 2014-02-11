@@ -37,11 +37,11 @@
 
       <div id="videos" ng-controller="ClipsCtrl">
         <div id="clips" ng-repeat="clip in clips">
-          <video class="videoclip" controls="controls" width="320" height="180" name="{{clip.title}}"
-            src="{{clip.url}}"></video>
+          <video class="videoclip" ng-dblclick="showData()" controls="controls" width="320" height="180" 
+          name="{{clip.title}}" src="{{clip.url}}"></video>
         </div>
         <ul>
-          <li ng-repeat="clip in clips">{{clip.title}}</li>
+          <li class="cliptitles" ng-repeat="clip in clips">{{clip.title}}</li>
         </ul>
       </div>
 
