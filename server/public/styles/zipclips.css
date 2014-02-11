@@ -1,0 +1,34 @@
+
+.container {
+  background-color: #23282d;
+}
+
+video {
+  padding: 5px;
+  margin: 0px;
+  border: 5:px solid black;
+  border-radius: 5px 5px 5px gray;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin: auto;
+}
+
+.event {
+  color: #ffffff;
+  display: inline;
+}
+
+.userimg {
+  display: inline;
+  float: right;
+
+}
+
+.username {
+  color: #ffffff;
+  font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+  float: right;
+}
