@@ -1,8 +1,5 @@
 // Create video elements for each entry in clipData
 
-var clipWidth = 300;
-var clipHeight = 225;
-
 // Load test data from array and display
 // for (var i = 0; i < clipData.length; i++) {
 //   clipTag = '<video class = "videoclip" controls="controls" width="272" height="153" name="' + clipData[i].title +
@@ -14,12 +11,6 @@ $("#clipcount").innerHTML = clipData.length.str;
 
 $(".videoclip").dblclick(function() {
   alert("This video was double clicked");
-  // videos = $(".videoclip");
-  // video = videos[0];
-  // console.log(video);
-  // video.controls = false;
-  // video.width = "400";
-  // alert(video.autoplay);
 });
 
 $(".videoclip").hover(function() {

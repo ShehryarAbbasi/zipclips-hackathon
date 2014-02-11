@@ -79,10 +79,10 @@ function ClipsCtrl ($scope) {
     }
   }
 
-  function showData(){
-    alert("Video has been double clicked");
+  $scope.showData = function(){
+    alert("Video Title: ");
   };
-   
+
 };
 
 console.log('Clips Control Loaded');
