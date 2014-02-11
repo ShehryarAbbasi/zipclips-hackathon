@@ -32,3 +32,18 @@ video {
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
   float: right;
 }
+
+.eventname {
+  color: #ffffff;
+  font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+}
+
+.clipcount {
+  color: #ffffff;
+  font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif; 
+}
+
+#mapholder {
+  margin: 5px;
+
+}

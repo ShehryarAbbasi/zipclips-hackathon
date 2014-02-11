@@ -11,9 +11,7 @@ var app = express()
 
 var path = require('path');
 
-app.get('/', function (req, res) {
-  
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/events', function  (req, res) {
   res.json(events);

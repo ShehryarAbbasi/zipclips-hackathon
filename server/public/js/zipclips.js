@@ -12,10 +12,15 @@ for (var i = 0; i < clipData.length; i++) {
 
 $(".videoclip").dblclick(function() {
   alert("This video was double clicked");
+  // videos = $(".videoclip");
+  // video = videos[0];
+  // console.log(video);
+  // video.controls = false;
+  // video.width = "400";
+  // alert(video.autoplay);
 });
 
-$(".videoclip").hover(
-  function() {
+$(".videoclip").hover(function() {
     $(this).append($("<span> Video Clip Data </span>"));
   }, function() {
     $(this).find("span:last").remove(); 
@@ -54,3 +59,7 @@ var showError = function() {
 };
 
 showPosition(position);
+
+$("#mapholder").click(function(){
+  $(this).find("img").remove();
+});
