@@ -1,6 +1,14 @@
 // Test data for ZipClips
 //
 // data.js - Defines an array of data regarding video clips and their accompanying details.
+// var eventData = {
+//   eventName: "Hack Reactor",
+//   eventID: "0000001",
+//   location : {
+//     latitude : 37.7836953,
+//     longitude : -122.4091845
+//   }
+// };
 
 var clipData = [
   {
@@ -8,76 +16,76 @@ var clipData = [
     title: "Day at HR - 1",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 15:31:20 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
   {
     url: "./videos/video2.mov",
     title: "Day at HR - 2",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 15:27:35 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
-    {
+  {
     url: "./videos/video3.mov",
     title: "Day at HR - 3",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 15:24:41 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
-    {
+  {
     url: "./videos/IMG_0100.mov",
     title: "Day at HR - 4",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 13:25:50 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
-    {
+  {
     url: "./videos/IMG_0101.mov",
     title: "Day at HR - 5",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 13:10:05 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
-    {
+  {
     url: "./videos/IMG_0102.mov",
     title: "Day at HR - 6",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 14:27:10 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
-    {
+  {
     url: "./videos/IMG_0103.mov",
     title: "Day at HR - 7",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 14:16:15 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
-    {
+  {
     url: "./videos/IMG_0104.mov",
     title: "Day at HR - 8",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 14:23:16 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
-    {
+  {
     url: "./videos/IMG_0105.mov",
     title: "Day at HR - 9",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 14:25:17 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
-    {
+  {
     url: "./videos/IMG_0106.mov",
     title: "Day at HR - 10",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 14:30:20 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   },
-    {
+  {
     url: "./videos/IMG_0107.mov",
     title: "Day at HR - 11",
     author: "patrickford",
     createdAt: "Mon Feb 10 2014 14:09:21 GMT-0800 (PST)",
-    location: "",
+    eventID: "0000001"
   }
 ];

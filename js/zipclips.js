@@ -1,7 +1,9 @@
 // Create video elements for each entry in clipData
 
-var now = new Date();
+var clipWidth = 300;
+var clipHeight = 225;
 
+// Load test data from array and display
 for (var i = 0; i < clipData.length; i++) {
   clipTag = '<video class = "videoclip" controls="controls" width="300" height="225" name="' + clipData[i].title +
             '" src="' + clipData[i].url +'"></video>';
@@ -22,6 +24,7 @@ $(".videoclip").hover(
 
 var x = document.getElementById("mapholder");
 
+// getLocation will be called in the camera app and coords attached to video metadata
 var getLocation = function() {
   if (Modernizr.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -43,7 +46,7 @@ var showPosition = function(position) {
   var latlon = position.coords.latitude + "," + position.coords.longitude;
 
   var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
-    + latlon + "&zoom=14&size=400x300&sensor=false";
+    + latlon + "&zoom=14&size=300x225&markers=color:red|" + latlon + "&sensor=false";
   var imgTag = "<img src='" + img_url + "'>";
   $("#mapholder").append(imgTag);
 };
