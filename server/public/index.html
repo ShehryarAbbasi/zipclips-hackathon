@@ -37,7 +37,7 @@
 
       <div id="videos" ng-controller="ClipsCtrl">
         <div id="clips" ng-repeat="clip in clips">
-          <video ng-dblclick="showData()" class="videoclip" controls="controls" width="320" height="180" 
+          <video ng-dblclick="favorite()" ng-mouseover="clipDetails()" class="videoclip" controls="controls" width="320" height="180" 
           name="{{clip.title}}" src="{{clip.url}}"></video>
         </div>
         <ul>

@@ -79,8 +79,12 @@ function ClipsCtrl ($scope) {
     }
   }
 
-  $scope.showData = function(){
-    alert("Video Title: ");
+  $scope.favorite = function(){
+    alert("Video Favorited");
+  };
+
+  $scope.clipDetails = function() {
+    
   };
 
 };

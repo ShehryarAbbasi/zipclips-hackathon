@@ -43,8 +43,8 @@ var showPosition = function(position) {
   var latlon = position.coords.latitude + "," + position.coords.longitude;
   var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
     + latlon + "&zoom=14&size=300x225&markers=color:red|" + latlon + "&sensor=false";
-  var imgTag = "<img src='" + img_url + "'>";
-  $("#mapholder").append(imgTag);
+  var imgTag = "<img id='map' src='" + img_url + "'>";
+  $("#mapholder").append(imgTag).hide();
 };
 
 var showError = function() {
@@ -54,5 +54,11 @@ var showError = function() {
 showPosition(position);
 
 $("#mapholder").click(function(){
-  $(this).find("img").remove();
+  // $(this).find("img").hide();
+  $(this).hide();
+});
+
+$("#eventname").click(function(){
+  // alert("Eventname clicked");
+  $("#mapholder").show();
 });
