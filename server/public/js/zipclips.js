@@ -54,11 +54,9 @@ var showError = function() {
 showPosition(position);
 
 $("#mapholder").click(function(){
-  // $(this).find("img").hide();
   $(this).hide();
 });
 
 $("#eventname").click(function(){
-  // alert("Eventname clicked");
   $("#mapholder").show();
 });
